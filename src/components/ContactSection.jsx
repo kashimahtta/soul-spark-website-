@@ -44,6 +44,14 @@ function SocialBrandIcon({ type }) {
     );
   }
 
+  if (type === "facebook") {
+    return (
+      <svg {...commonProps}>
+        <path d="M13.6 21v-8.1h2.7l.4-3.1h-3.1V7.4c0-.9.3-1.5 1.6-1.5h1.7V3.1c-.3 0-1.3-.1-2.5-.1-2.5 0-4.1 1.5-4.1 4.3v2.4H7.5v3.1h2.7V21h3.4Z" />
+      </svg>
+    );
+  }
+
   return (
     <svg {...commonProps}>
       <path d="M6.9 8.5A2.5 2.5 0 0 1 9.4 6h5.2a2.5 2.5 0 0 1 2.5 2.5v7A2.5 2.5 0 0 1 14.6 18H9.4a2.5 2.5 0 0 1-2.5-2.5v-7Zm3.1 1.2h.9v5.6h-1.1v-4.4l-1.2 1.1-.8-.8 1.9-1.9Zm3.9 0h1.2v5.6h-1.1v-1.7h-1.1v1.7H12V9.7h1.1v1.8h1.2V9.7Z" />
@@ -54,21 +62,27 @@ function SocialBrandIcon({ type }) {
 const socialLinks = [
   {
     label: "Instagram",
-    href: "https://instagram.com",
+    href: "https://www.instagram.com/soul_spark.16?stkn=MTZib2praXF6dGc4eg==",
     type: "instagram",
     color: "#E1306C",
   },
   {
-    label: "YouTube",
-    href: "https://youtube.com",
-    type: "youtube",
-    color: "#FF0000",
+    label: "Facebook",
+    href: "https://www.facebook.com/share/1Dvsg51pDD/",
+    type: "facebook",
+    color: "#1877F2",
   },
   {
     label: "LinkedIn",
-    href: "https://linkedin.com",
+    href: "https://www.linkedin.com/in/satyadeep-mahtta-540b22311?utm_source=share_via&utm_content=profile&utm_medium=member_android",
     type: "linkedin",
     color: "#0A66C2",
+  },
+  {
+    label: "YouTube",
+    href: "https://youtube.com/@satyadeepmahtta6957?si=xAYWRLLTq0ghgf3I",
+    type: "youtube",
+    color: "#FF0000",
   },
 ];
 
