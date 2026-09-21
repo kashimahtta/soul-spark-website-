@@ -9,25 +9,18 @@ function Header() {
 
   return (
     <header className="fixed inset-x-0 top-0 z-50 px-4 pt-4">
-      <div className="glass mx-auto flex max-w-7xl items-center justify-between rounded-2xl px-4 py-3 shadow-sm sm:px-6">
+      <div className="glass mx-auto flex max-w-7xl items-center justify-between rounded-[1.6rem] px-4 py-3 shadow-sm sm:px-6">
         <a href="#home" className="flex items-center gap-3">
-          <div className="flex h-14 w-14 items-center justify-center overflow-hidden rounded-full bg-[#F9F1F5] ring-2 ring-white sm:h-16 sm:w-16">
+          <div className="relative flex h-20 w-20 items-center justify-center overflow-visible rounded-full bg-white p-1 ring-4 ring-white shadow-[0_12px_30px_rgba(194,24,91,0.15)] sm:h-24 sm:w-24">
+            <div className="absolute inset-0 rounded-full bg-gradient-to-br from-[#F9F1F5] via-white to-[#F9F1F5]" />
             <img
               src="/logo.jpeg"
               alt="Soul Spark logo"
-              className="h-full w-full object-cover"
+              className="relative h-full w-full rounded-full object-cover"
               onError={(event) => {
                 event.currentTarget.style.display = "none";
               }}
             />
-          </div>
-          <div>
-            <div className="font-display text-xl font-bold text-[#1F111A]">
-              Soul Spark
-            </div>
-            <div className="text-xs text-[#2D2D2D]">
-              Learn · Grow · Transform
-            </div>
           </div>
         </a>
 
