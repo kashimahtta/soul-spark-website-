@@ -7,7 +7,7 @@ function SocialBrandIcon({ type }) {
     viewBox: "0 0 24 24",
     fill: "currentColor",
     "aria-hidden": "true",
-    className: "h-5 w-5",
+    className: "h-6 w-6",
   };
 
   if (type === "instagram") {
@@ -182,7 +182,7 @@ function ContactSection() {
                 <Phone size={19} /> Call Now
               </motion.a>
 
-              <div className="mt-2 flex flex-wrap items-center gap-3">
+              <div className="mt-5 flex flex-wrap items-center justify-start gap-4 rounded-2xl border border-white/10 bg-white/5 p-4">
                 {socialLinks.map(({ label, href, type, color }) => (
                   <motion.a
                     key={label}
@@ -190,10 +190,10 @@ function ContactSection() {
                     target="_blank"
                     rel="noreferrer"
                     aria-label={label}
-                    whileHover={{ y: -3, scale: 1.04 }}
+                    whileHover={{ y: -3, scale: 1.08 }}
                     whileTap={{ scale: 0.96 }}
-                    className="inline-flex h-12 w-12 items-center justify-center rounded-full border border-white/15 bg-white/5 text-white transition hover:border-white/30 hover:bg-white/10"
-                    style={{ color }}
+                    className="inline-flex h-14 w-14 items-center justify-center rounded-full border border-white/15 bg-white/5 text-white shadow-lg shadow-black/10 transition hover:border-white/30 hover:bg-white/10"
+                    style={{ color, backgroundColor: "rgba(255,255,255,0.03)" }}
                   >
                     <SocialBrandIcon type={type} />
                   </motion.a>
