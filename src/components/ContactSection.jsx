@@ -52,6 +52,14 @@ function SocialBrandIcon({ type }) {
     );
   }
 
+  if (type === "github") {
+    return (
+      <svg {...commonProps}>
+        <path d="M12 2.2a10 10 0 0 0-3.16 19.49c.5.09.68-.22.68-.48v-1.7c-2.77.6-3.35-1.18-3.35-1.18-.45-1.15-1.1-1.46-1.1-1.46-.9-.62.07-.61.07-.61 1 .07 1.53 1.02 1.53 1.02.9 1.55 2.36 1.1 2.93.84.09-.66.35-1.1.63-1.35-2.21-.25-4.53-1.1-4.53-4.89 0-1.08.39-1.96 1.02-2.65-.1-.25-.44-1.28.1-2.66 0 0 .84-.27 2.75 1.02A9.5 9.5 0 0 1 12 6.8c.85 0 1.7.11 2.49.33 1.9-1.29 2.74-1.02 2.74-1.02.54 1.38.2 2.41.1 2.66.64.69 1.02 1.57 1.02 2.65 0 3.8-2.33 4.63-4.55 4.88.36.31.68.93.68 1.87v2.77c0 .27.18.58.69.48A10 10 0 0 0 12 2.2Z" />
+      </svg>
+    );
+  }
+
   return (
     <svg {...commonProps}>
       <path d="M6.9 8.5A2.5 2.5 0 0 1 9.4 6h5.2a2.5 2.5 0 0 1 2.5 2.5v7A2.5 2.5 0 0 1 14.6 18H9.4a2.5 2.5 0 0 1-2.5-2.5v-7Zm3.1 1.2h.9v5.6h-1.1v-4.4l-1.2 1.1-.8-.8 1.9-1.9Zm3.9 0h1.2v5.6h-1.1v-1.7h-1.1v1.7H12V9.7h1.1v1.8h1.2V9.7Z" />
@@ -83,6 +91,12 @@ const socialLinks = [
     href: "https://youtube.com/@satyadeepmahtta6957?si=xAYWRLLTq0ghgf3I",
     type: "youtube",
     color: "#FF0000",
+  },
+  {
+    label: "GitHub",
+    href: "https://github.com/satyadeepmahtta",
+    type: "github",
+    color: "#FFFFFF",
   },
 ];
 
@@ -135,11 +149,11 @@ function ContactSection() {
                   <Phone size={18} /> +91 99998 84938
                 </motion.a>
                 <motion.a
-                  href="mailto:you@soulsparkofficial.com"
+                  href="mailto:satyadeep.mahtta@gmail.com"
                   whileHover={{ x: 4 }}
                   className="flex items-center gap-2"
                 >
-                  <Mail size={18} /> you@soulsparkofficial.com
+                  <Mail size={18} /> satyadeep.mahtta@gmail.com
                 </motion.a>
               </div>
 
@@ -156,7 +170,7 @@ function ContactSection() {
             <div className="overflow-hidden rounded-[2rem] border border-white/10 bg-white/5 lg:col-start-1 lg:row-span-2 lg:row-start-1">
               <iframe
                 title="Soul Spark location"
-                src="https://www.google.com/maps?q=Merlin+Society+Vasundhra+Sector+13&z=15&output=embed"
+                src="https://www.google.com/maps?q=SOUL+SPARK+Vasundhra+Sec+13&z=15&output=embed"
                 className="h-[320px] w-full border-0 lg:h-full lg:min-h-[420px]"
                 loading="lazy"
                 allowFullScreen

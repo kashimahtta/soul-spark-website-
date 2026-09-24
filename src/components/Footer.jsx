@@ -10,11 +10,13 @@ function Footer() {
           viewport={{ once: true }}
           className="flex items-center gap-3"
         >
-          <img
-            src="/logo.jpeg"
-            alt="Soul Spark logo"
-            className="h-12 w-12 rounded-full object-cover ring-2 ring-[#F9F1F5]"
-          />
+          <div className="flex h-18 w-18 items-center justify-center overflow-hidden rounded-full bg-white p-1 shadow-[0_8px_25px_rgba(194,24,91,0.12)] ring-2 ring-[#F9F1F5] sm:h-20 sm:w-20">
+            <img
+              src="/logo.jpeg"
+              alt="Soul Spark logo"
+              className="h-full w-full rounded-full object-cover object-center"
+            />
+          </div>
         </motion.div>
 
         <motion.div
